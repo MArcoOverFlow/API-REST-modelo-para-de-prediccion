@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clasificacion de NO2</title>
+
+    <!-- Font Icon -->
+
+
+
+    <!-- Main css -->
+    <style>
+        /* Reset some default browser styles */
+        body,
+        h2,
+        h3,
+        p,
+        figure,
+        form,
+        fieldset,
+        input {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        /* General styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        /* Main container */
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Signup section */
+        .signup {
+            width: 100%;
+            max-width: 960px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            margin: 20px;
+        }
+
+        .signup-content {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+
+        .signup-form {
+            width: 50%;
+            padding: 40px;
+        }
+
+        .signup-image {
+            width: 50%;
+            background: #f2f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .signup-image figure {
+            margin: 0;
+        }
+
+        .signup-image img {
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        /* Form title */
+        .form-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        /* Form styles */
+        .form-group {
+            position: relative;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 10px;
+            font-size: 20px;
+            color: #666;
+        }
+
+        .form-group input {
+            width: calc(100% - 40px);
+            padding: 10px 20px 10px 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background: #f7f7f7;
+            font-size: 16px;
+            color: #333;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus {
+            border-color: #777;
+            background: #fff;
+        }
+
+        
+
+        .form-submit {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background 0.3s ease;
+        }
+
+        .form-submit:hover {
+            background: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <!-- Applicant form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Clasificacion dioxido de nitrogeno en el ambiente</h2>
+                        <form action="/prediction" method="POST" class="register-form" id="register-form">
+                            <h3>Datos de Entrada</h3>
+                            <!--  -->
+                            <div class="form-group">
+                                <label for="no2"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="no2" id="no2" placeholder="no2" required />
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Enviar" />
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="../static/images/signup-image.jpg" alt="sing up image"></figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
