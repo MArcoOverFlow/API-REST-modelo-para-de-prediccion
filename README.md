@@ -7,9 +7,11 @@ El objetivo de este servicio es proporcionar una API REST para la predicción de
 
 El servicio se compone de dos páginas principales:
 1. **Home Page**: Una interfaz gráfica donde los usuarios pueden introducir manualmente los datos de NO2 y enviar una solicitud para obtener una predicción.
-![Uso con Postman](static/images/principal.jpj)
+
+![Uso con Postman](static/images/principal.jpg)
 
 2. **Prediction Page**: Una página que muestra el resultado de la predicción, basada en los datos ingresados por el usuario en la Home Page.
+
 ![Uso con Postman](static/images/prediccion.jpg)
 
 Esta API está diseñada para ser desplegada utilizando contenedores Docker, lo que facilita su distribución y ejecución en diferentes entornos sin preocuparse por inconsistencias en las dependencias del sistema.
